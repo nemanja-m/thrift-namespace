@@ -6,6 +6,8 @@ module ThriftNamespace
   $build_dir  = "/tmp/thrift-build"
   $output_dir = "lib/thrift"
 
+  module_function
+
   def file_to_thrift_namespace(path)
     basename = File.basename(path).gsub!(".thrift", "")
 
@@ -13,8 +15,6 @@ module ThriftNamespace
 
     "Thrift.#{service_name}"
   end
-
-  module_function
 
   def insert_namespaces
     FileUtils.rm_rf($build_dir)
