@@ -10,7 +10,6 @@ Gem::Specification.new do |spec|
   spec.email         = ["devops@renderedtext.com"]
 
   spec.summary       = %q{Inserts namespace int .thrift files.}
-  spec.description   = %q{Inserts namespace int .thrift files.}
   spec.homepage      = "https://semaphoreci.com"
   spec.license       = "MIT"
 
